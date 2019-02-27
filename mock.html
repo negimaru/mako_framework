@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @font-face {
+            font-family:'Reactor7';
+            src:url('./fonts/Reactor7.eot');
+            src:url('./fonts/Reactor7.eot?#iefix') format('embedded-opentype'),
+            url('./fonts/Reactor7.woff') format('woff'),
+            url('./fonts/Reactor7.ttf') format('truetype'),
+            url('./fonts/Reactor7.svg#Reactor7') format('svg');
+            font-weight:normal;
+            font-style:normal;
+        }
+
+        @font-face {
+            font-family:'final-fantasy';
+            src:url('./fonts/finalf.ttf');
+        }
+
+
+
+        body{
+            background-color: black;
+            font-family: Reactor7 ,final-fantasy;
+        }
+        .main-container {
+            background-color: black;
+            display: flex;
+        }
+
+        .menu {
+            /*box-shadow: 0px 0px 0px 6px rgba(199,204,200,1);*/
+            border-radius: 8px;
+            padding: 10px;
+            color: #FFF;
+            border: 8px solid transparent;
+            -webkit-border-image: url('./img/menu-border.png') 10 10 stretch;
+         }
+
+
+        .menu__left-menu-container {
+            background: linear-gradient(135deg, #1051af 0%,#040017 86%);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .menu__right-menu-container {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: space-between;
+
+        }
+
+        .menu__items {
+            width: 100%;
+            background: linear-gradient(135deg, #1051af 0%,#040017 86%);
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+        }
+
+        .menu__dates {
+            width: 100%;
+            background: linear-gradient(135deg, #1051af 0%,#040017 86%);
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+        }
+
+        .menu__location{
+            width: 100%;
+            background: linear-gradient(135deg, #1051af 0%,#040017 86%);
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+        }
+        .character_container{
+            display: flex;
+            flex-direction: row;
+        }
+        .photo_container , .status_container, .level_container{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+<div class="main-container">
+    <div class="menu menu__left-menu-container characters-menu">
+
+        <div class="character_container">
+            <div class="photo_container">
+                <div class="placeholder_to_remove"
+                     style="min-height: 150px; min-width: 170px; max-height: 150px; max-width: 170px">
+                    <img src="./resources/cloud.png">
+                </div>
+            </div>
+            <div class="status_container">
+                <span>Name</span>
+                <span>Level 7</span>
+                <span>PG 1900pg</span>
+                <span>PM 800pm</span>
+            </div>
+            <div class="level_container">
+                <span>Next Level</span>
+                <span>Limit Level</span>
+            </div>
+        </div>
+
+
+        <div class="character_container">
+            <div class="photo_container">
+                <div class="placeholder_to_remove"
+                     style="min-height: 150px; min-width: 170px; max-height: 150px; max-width: 170px">
+                    <img src="./resources/cloud.png">
+                </div>
+            </div>
+            <div class="status_container">
+                <span>Cloud</span>
+                <span>LV 8</span>
+                <span>HP 1900</span>
+                <span>MP 800</span>
+            </div>
+            <div class="level_container">
+                <span>Next Level</span>
+                <span>Limit Level</span>
+            </div>
+        </div>
+
+
+        <div class="character_container">
+            <div class="photo_container">
+                <div class="placeholder_to_remove"
+                     style="min-height: 150px; min-width: 170px; max-height: 150px; max-width: 170px">
+                    <img src="./resources/cloud.png">
+                </div>
+            </div>
+            <div class="status_container">
+                <span>Name</span>
+                <span>Level 7</span>
+                <span>PG 1900pg</span>
+                <span>PM 800pm</span>
+            </div>
+            <div class="level_container">
+                <span>Next Level</span>
+                <span>Limit Level</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="menu__right-menu-container">
+        <div class="menu menu__items">
+            <label>
+                <input type="radio" name="option" value="Items">
+                <span>Items</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Magic">
+                <span>Magic</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Materia">
+                <span>Materia</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Equip">
+                <span>Equip</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Status">
+                <span>Status</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Order">
+                <span>Order</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Limit">
+                <span>Limit</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="Config">
+                <span>Config</span>
+            </label>
+
+            <label>
+                <input type="radio" name="option" value="save">
+                <span>save</span>
+            </label>
+
+            <label>
+
+                <input type="radio" name="option" value="quit">
+                <span>quit</span>
+            </label>
+
+
+        </div>
+        <div class="menu menu__dates">
+            24:00:00
+            1000g
+        </div>
+        <div class="menu menu__location">
+            MAKO REACTOR
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
