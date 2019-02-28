@@ -91,6 +91,69 @@
         }
 
 
+        /* Fill Bars */
+        .progress-bar__container{
+            background-color: #acacac;
+            height: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            justify-content: center;
+            box-shadow: 1px 1px 0px 1px #181818, 0 0px 0px #7a7a7a inset;
+        }
+        .progress-bar__fill--container{
+            width: 98%;
+            height: 80%;
+            padding: 0% 1%;
+        }
+        .progress-bar__fill--content{
+            width: 74%;
+            height: 100%;
+        }
+        .progress-bar__fill--container .pink{
+            background: linear-gradient(to bottom, #cd82a8 0%,pink 50%,rgba(201,201,201,1) 51%,lightpink);
+        }
+        .progress-bar__fill--container .yellow{
+            background: yellow;
+        }
+        .progress-bar__fill--container .red{
+            background: linear-gradient(to bottom, darkred 0%,red 50%,rgba(201,201,201,1) 51%,red);
+        }
+        .progress-bar__fill--container .blue{
+            background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(201,201,201,1) 51%,rgba(76,144,255,1) 71%);
+        }
+        .progress-bar__fill--container .rainbow{
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+            animation: rainbow 2s ease infinite;
+        }
+
+
+        @-webkit-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-moz-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-o-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+
+
+
+
 
 
     </style>
@@ -115,6 +178,13 @@
             </div>
             <div class="level_container">
                 <span>Next Level</span>
+                    <div class="progress-bar__container">
+                        <div class="progress-bar__fill--container">
+                            <div class="progress-bar__fill--content pink">
+                                <div class="progress-bar__fill--shader"></div>
+                            </div>
+                        </div>
+                    </div>
                 <span>Limit Level</span>
             </div>
         </div>
