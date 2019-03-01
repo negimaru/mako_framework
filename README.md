@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/negimaru/mako_framework">
-    <img src="./docs/MakoCSSLogo.png" alt="Mako logo" width="72" height="72">
+    <img src="./docs/MakoCSSLogo.png" alt="Mako logo" width="180" height="180">
   </a>
 </p>
 
