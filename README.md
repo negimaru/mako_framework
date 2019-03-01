@@ -33,7 +33,7 @@ sudo npm i gulp-sass -ES --unsafe-perm=true
 npm run dev
 ```
 
-**Build script:**
+**Build script:** @TODO
 ```bash
 npm run build
 ```
