@@ -1,9 +1,4 @@
-<p align="center">
-  <a href="https://github.com/negimaru/mako_framework">
-    <img src="./docs/MakoCSSLogo.png" alt="Mako logo" width="180" height="180">
-  </a>
-</p>
-
+# ![](./favicon.png) MAKO
 
 Basic blank structure of a project based on ITCSS (Scalable and Maintainable CSS Architecture) and BEMIT (BEM) Methodology.
 
@@ -33,7 +28,7 @@ sudo npm i gulp-sass -ES --unsafe-perm=true
 npm run dev
 ```
 
-**Build script:** @TODO
+**Build script:**
 ```bash
 npm run build
 ```
@@ -103,7 +98,6 @@ src/
 │   ├── components.scss
 │   ├── components__button.scss
 │   ├── components__input.scss
-│   ├── components__progress-bar.scss
 │   └── structure/
 │       ├── components__header.scss
 │       └── components__footer.scss

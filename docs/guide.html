@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Structure ITCSS (BEMIT) for Testing</title>
+  <link href="../dist/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="o-container o-container--fluid">
+  
+  <section class="o-section">
+    <div class="o-container">
+
+Es un framework CSS para artesanos web. Es un framework mas para poder comenzar a desarrollar tu proyecto con una base predefinida basada en OOCSS, trabajando mediante BEMIT (BEM + ITCSS). De esta forma podemos desarrollar nuestro proyecto de una forma coherente, limpia y ordenada pudiendo ser mantenido y escalado sin ningúna dificultad.
+<br/><br/>
+El framework cuenta con algunos componentes desarrollados para comenzar a trabajar, los estilos de cada componentes son estilos genéricos y están pensados para ser editados conforme a las necesidades del proyecto con el que lo utilices, aunque si te parecen bonitos, ¡están preparados para poder utilizarlos!
+<br/><br/>
+Componentes:
+<br/><br/>
+Button
+<br/>
+Input
+  </div>
+</section>
+
+  <section class="o-section">
+    <div class="o-container">
+      <h2 class="h-heading">Buttons</h2>
+      <p>Button styles can be applied to any element. Typically you'll want to use either a <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code> element:</p>
+
+      <a class="c-button" href="#" role="button">Anchor</a>
+      <button class="c-button" type="submit">Button</button>
+      <input class="c-button" type="button" value="Input">
+      <input class="c-button" type="submit" value="Submit">
+      <input class="c-button" type="reset" value="Reset">
+
+      <pre>
+        <code class="language-html" data-lang="html">
+&lt;a class=&quot;c-button&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class=&quot;c-button&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;c-button&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;c-button&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;input class=&quot;c-button&quot; type=&quot;reset&quot; value=&quot;Reset&quot;&gt;
+        </code>
+      </pre>
+
+      <h3 class="h-headline">Disabled state</h3>
+
+
+
+      <p>Make your buttons inactive by adding the "is-disabled" class to <code>&lt;a&gt;</code> element, and the disabled boolean attribute for the elements that support this attribute like <code>&lt;button&gt;</code> and <code>&lt;input&gt;</code> elements. You can use the two methods.</p>
+            
+      <a class="c-button is-disabled" href="#" role="button">Anchor</a>
+      <button class="c-button is-disabled" type="submit" disabled>Button</button>
+      <input class="c-button is-disabled" type="button" value="Input" disabled>
+      <input class="c-button is-disabled" type="submit" value="Submit" disabled>
+      <input class="c-button is-disabled" type="reset" value="Reset" disabled>
+
+       <pre>
+        <code class="language-html" data-lang="html">
+&lt;a class=&quot;c-button is-disabled&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Anchor&lt;/a&gt;
+&lt;button class=&quot;c-button is-disabled&quot; type=&quot;submit&quot; disabled&gt;Button&lt;/button&gt;
+&lt;input class=&quot;c-button is-disabled&quot; type=&quot;button&quot; value=&quot;Input&quot; disabled&gt;
+&lt;input class=&quot;c-button is-disabled&quot; type=&quot;submit&quot; value=&quot;Submit&quot; disabled&gt;
+&lt;input class=&quot;c-button is-disabled&quot; type=&quot;reset&quot; value=&quot;Reset&quot; disabled&gt;
+        </code>
+      </pre>
+     
+    </div>
+  </section>
+
+
+
+  <section class="o-section">
+    <div class="o-container">
+
+      <h2 class="h-heading">01. Headings</h2>
+
+      <h1 class="h-title">Title (.h-title)</h1>
+      <h2 class="h-heading">Heading (.h-heading)</h2>
+      <h3 class="h-headline">Headline (.h-headline)</h3>
+      <p class="h-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis ipsum sed felis varius finibus ut id eros. Mauris at arcu vel arcu rhoncus imperdiet. (.h-subtitle)</p>
+      <p class="h-generic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis ipsum sed felis varius finibus ut id eros. Mauris at arcu vel arcu rhoncus imperdiet. Ut vel ex in nunc consectetur consequat. Duis id nulla sed ligula maximus maximus. Curabitur id ante et est rhoncus facilisis. Sed finibus ligula non justo euismod imperdiet. Aliquam dapibus quam vitae lorem tempor, et pretium velit suscipit. Sed vitae orci tincidunt, ornare ante interdum, finibus odio. Donec vel diam nec urna laoreet posuere. (.h-generic)</p>
+    </div>
+  </section>
+
+  
+  <section class="o-section">
+    <div class="o-container">
+
+      <h2 class="h-heading">02. Layout columns system</h2>
+
+      <div class="o-grid">
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">1</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">2</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">3</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">4</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">5</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">6</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">7</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">8</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">9</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">10</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">11</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">12</div>
+        </div>
+      </div>
+
+      <div class="o-grid">
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">1</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">1</div>
+        </div>
+        <div class="o-grid__col u-1/12@md">
+          <div class="u-box">1</div>
+        </div>
+        <div class="o-grid__col u-3/12@md">
+          <div class="u-box">3</div>
+        </div>
+        <div class="o-grid__col u-6/12@md">
+          <div class="u-box">6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="o-section">
+    <div class="o-container">
+
+      <h2 class="h-heading">03. Tables</h2>
+
+      <table class="o-table" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  </section>
+
+  <section class="o-section">
+    <div class="o-container">
+      <h2 class="h-heading">05. Forms</h2>
+            
+      <form>
+        <div class="o-grid">
+          <div class="o-grid__col">
+            <div class="c-input">
+              <label class="c-input__label" for="input01">Label</label>
+              <input class="c-input__field" type="text" id="input01" placeholder="Input placeholder" />
+            </div>            
+          </div>
+          <div class="o-grid__col">
+            <div class="c-input">
+              <label class="c-input__label" for="input01">Label</label>
+              <input class="c-input__field" type="text" id="input01" placeholder="Input placeholder" />
+            </div>            
+          </div>
+        </div>
+        <div class="o-grid">
+          <div class="o-grid__col">
+            <div class="c-input">
+              <label class="c-input__label" for="input01">Label</label>
+              <input class="c-input__field" type="text" id="input01" placeholder="Input placeholder" />
+            </div>            
+          </div>
+          <div class="o-grid__col">
+            <div class="c-input">
+              <label class="c-input__label" for="input01">Label</label>
+              <input class="c-input__field" type="text" id="input01" placeholder="Input placeholder" />
+            </div>            
+          </div>
+        </div>
+        <button class="c-button" type="submit">Send form</button>
+      </form>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
