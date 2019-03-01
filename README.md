@@ -1,4 +1,4 @@
-# <center> ![MAKO](./docs/MakoCSSLogo.png) </center>
+# <p style="text-align: center; width: 100%; "> ![MAKO](./docs/MakoCSSLogo.png) </p>
 
 
 
