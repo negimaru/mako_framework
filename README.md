@@ -1,6 +1,8 @@
-![MAKO](./docs/MakoCSSLogo.png)
----
-
+<p align="center">
+  <a href="https://github.com/negimaru/mako_framework">
+    <img src="./docs/MakoCSSLogo.png" alt="Mako logo" width="72" height="72">
+  </a>
+</p>
 
 
 Basic blank structure of a project based on ITCSS (Scalable and Maintainable CSS Architecture) and BEMIT (BEM) Methodology.
