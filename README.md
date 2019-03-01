@@ -1,4 +1,4 @@
-# 🔷 PolygonCSS
+# ![](./favicon.png) MAKO
 
 Basic blank structure of a project based on ITCSS (Scalable and Maintainable CSS Architecture) and BEMIT (BEM) Methodology.
 
@@ -98,6 +98,7 @@ src/
 │   ├── components.scss
 │   ├── components__button.scss
 │   ├── components__input.scss
+│   ├── components__progress-bar.scss
 │   └── structure/
 │       ├── components__header.scss
 │       └── components__footer.scss
