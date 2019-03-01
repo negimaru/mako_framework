@@ -1,8 +1,7 @@
-<center> # ![](./docs/MakoCSSLogo.png) </center>
+# <center> ![MAKO](./docs/MakoCSSLogo.png) </center>
 
 
 
-# MAKO
 
 Basic blank structure of a project based on ITCSS (Scalable and Maintainable CSS Architecture) and BEMIT (BEM) Methodology.
 
