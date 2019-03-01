@@ -1,45 +1,43 @@
 {
-  "name": "storybook_ffvii",
-  "version": "1.0.0",
-  "description": "Attempt to make the original FFVII Menus in HTML",
-  "main": "index.js",
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+  "name": "polygoncss",
+  "version": "1.0.1-alpha",
+  "description": "Structured for a project based in ITCSS: Scalable and maintainable CSS architecture and BEM (BEMIT) methodology.",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
   },
-  "author": "Vistor Martin (Negimaru)",
-  "license": "Beerware",
-  "dependencies": {
-    "@storybook/react": "^4.1.11",
-    "@tinymce/tinymce-react": "^2.6.1",
-    "lodash": "^4.17.11",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "rimraf": "^2.6.2",
-    "styled-components": "^4.1.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
-    "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-options": "^4.1.13",
-    "@storybook/addon-viewport": "^4.1.11",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-styled-components": "^1.10.0",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "enzyme-to-json": "^3.3.5",
-    "eslint": "^5.13.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^22.3.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "jest": "^24.1.0",
-    "jest-styled-components": "^6.3.1",
-    "storybook-addon-jsx": "^6.0.0"
-  }
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "4.0.1",
+    "specificity-graph": "^0.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp default",
+    "graph": "specificity-graph dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaufel/polygoncss.git"
+  },
+  "keywords": [
+    "itcss",
+    "framework",
+    "css",
+    "sass",
+    "scss",
+    "bem",
+    "bemit"
+  ],
+  "author": "Juan Carlos Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klaufel/polygoncss/issues"
+  },
+  "homepage": "https://github.com/klaufel/polygoncss#readme"
 }

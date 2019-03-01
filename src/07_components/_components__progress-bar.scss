@@ -1,0 +1,111 @@
+/* ============================================================
+ * Components: Progress-Bar
+ * ============================================================
+ *
+ * Lorem fistrum a gramenawer te va a hasé pupitaa hasta luego Lucas no te digo trigo por no llamarte
+ * Rodrigor quietooor tiene musho peligro ese pedazo de.
+ * Te voy a borrar el cerito torpedo me cago en tus muelas al ataquerl jarl tiene musho peligro.
+ *
+ */
+
+// ============================================================
+// Variables
+
+$c-progress-bar__background-color: #acacac;
+$c-progress-bar__height: 15px !default;
+$c-progress-bar__width: 100% !default;
+$c-progress-bar__padding: 0 !default;
+$c-progress-bar__box-shadow: 1px 1px 0px 1px #181818, 0 0px 0px #7a7a7a inset !default;
+
+// ============================================================
+// CSS Output
+
+.c-progress-bar {
+  background-color: #acacac;
+  height: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  box-shadow: 1px 1px 0px 1px #181818, 0 0px 0px #7a7a7a inset;
+
+  .c-progress-bar__fill {
+    width: 98%;
+    height: 80%;
+    padding: 0% 1%;
+
+    & .pink {
+      background: linear-gradient(to bottom, #cd82a8 0%, pink 50%, rgba(201, 201, 201, 1) 51%, lightpink);
+    }
+    & .yellow {
+      background: linear-gradient(to bottom, rgba(150, 150, 0, 1) 0%, rgba(200, 200, 0, 1) 50%, rgba(201, 201, 201, 1) 51%, rgba(180, 180, 0, 1) 71%);
+    }
+    & .red {
+      background: linear-gradient(to bottom, darkred 0%, red 50%, rgba(201, 201, 201, 1) 51%, red);
+    }
+    & .blue {
+      background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(41, 137, 216, 1) 50%, rgba(201, 201, 201, 1) 51%, rgba(76, 144, 255, 1) 71%);
+    }
+    & .green {
+      background: linear-gradient(to bottom, rgba(30, 87, 0, 1) 0%, rgba(41, 137, 0, 1) 50%, rgba(201, 201, 201, 1) 51%, rgba(76, 144, 0, 1) 71%);
+    }
+    & .rainbow {
+      background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+      background-size: 1800% 1800%;
+      animation: rainbow 2s ease infinite;
+    }
+  }
+
+  .c-progress-bar__content {
+    width: 74%;
+    height: 100%;
+  }
+
+  /* TEMPORAL FIX NOT FINAL PLACE*/
+  @-webkit-keyframes rainbow {
+    0% {
+      background-position: 0% 82%
+    }
+    50% {
+      background-position: 100% 19%
+    }
+    100% {
+      background-position: 0% 82%
+    }
+  }
+  @-moz-keyframes rainbow {
+    0% {
+      background-position: 0% 82%
+    }
+    50% {
+      background-position: 100% 19%
+    }
+    100% {
+      background-position: 0% 82%
+    }
+  }
+  @-o-keyframes rainbow {
+    0% {
+      background-position: 0% 82%
+    }
+    50% {
+      background-position: 100% 19%
+    }
+    100% {
+      background-position: 0% 82%
+    }
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 82%
+    }
+    50% {
+      background-position: 100% 19%
+    }
+    100% {
+      background-position: 0% 82%
+    }
+  }
+
+}
