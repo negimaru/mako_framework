@@ -14,10 +14,13 @@
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "4.0.1",
-    "specificity-graph": "^0.1.7"
+    "specificity-graph": "^0.1.7",
+    "minimatch": ">=3.0.2",
+    "lodash": ">=4.17.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Work in Progress\" && exit 1",
     "dev": "gulp default",
     "graph": "specificity-graph dist/style.css"
   },

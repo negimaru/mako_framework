@@ -11,3 +11,4 @@
   * [Button](components/button.md)
   * [Input](components/input.md)
   * [Progress-bar](components/progress-bar.md)
+  * [Menu](components/menu.md)

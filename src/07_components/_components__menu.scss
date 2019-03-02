@@ -1,0 +1,60 @@
+/* ============================================================
+ * Components: Progress-Bar
+ * ============================================================
+ *
+ * Lorem fistrum a gramenawer te va a hasé pupitaa hasta luego Lucas no te digo trigo por no llamarte
+ * Rodrigor quietooor tiene musho peligro ese pedazo de.
+ * Te voy a borrar el cerito torpedo me cago en tus muelas al ataquerl jarl tiene musho peligro.
+ *
+ */
+
+// ============================================================
+// Variables
+
+$c-progress-bar__background-color: #acacac;
+$c-progress-bar__height: 15px !default;
+$c-progress-bar__width: 100% !default;
+$c-progress-bar__padding: 0 !default;
+$c-progress-bar__box-shadow: 1px 1px 0px 1px #181818, 0 0px 0px #7a7a7a inset !default;
+
+// ============================================================
+// CSS Output
+
+
+.c-menu__container{
+  margin:auto;
+  width:400px;
+  font-size:16px;
+  line-height:30px;
+  border:2px solid #2e3233;
+  color: white;
+  position:relative;
+  z-index:2;
+  &:before{
+    background-color:#e7e2e6;
+    content:"";
+    position:absolute;
+    top:-6px;
+    left:-6px;
+    width:calc(100% + 12px);
+    height:calc(100% + 12px);
+    z-index:0;
+    display:block;
+    box-shadow: inset -3px -3px 0 0 #4a4a4a, inset 3px 3px 0 0 #949597;
+    -webkit-clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px);
+    clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px);
+  }
+  .c-menu__content {
+    height: auto;
+    position: relative;
+    padding: 20px;
+    background: #0355ab;
+    background: -moz-linear-gradient(-45deg, #0355ab 0%, #010027 100%);
+    background: -webkit-linear-gradient(-45deg, #0355ab 0%,#010027 100%);
+    background: linear-gradient(135deg, #0355ab 0%,#010027 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0355ab', endColorstr='#010027',GradientType=1 );
+    box-shadow: inset -3px -3px 0 0 #929790, inset 3px 3px 0 0 #4d484c;
+    -webkit-clip-path: polygon(5px 0, calc(100% - 5px) 0, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0 calc(100% - 5px), 0 5px);
+    clip-path: polygon(5px 0, calc(100% - 5px) 0, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0 calc(100% - 5px), 0 5px);
+  }
+}
