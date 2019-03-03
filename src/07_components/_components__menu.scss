@@ -11,25 +11,28 @@
 // ============================================================
 // Variables
 
-$c-progress-bar__background-color: #acacac;
-$c-progress-bar__height: 15px !default;
-$c-progress-bar__width: 100% !default;
-$c-progress-bar__padding: 0 !default;
-$c-progress-bar__box-shadow: 1px 1px 0px 1px #181818, 0 0px 0px #7a7a7a inset !default;
+$c-menu__background-color: #acacac;
+$c-menu__height: 15px !default;
+$c-menu__margin: auto !default;
+$c-menu__padding: 0 !default;
+$c-menu__font-size: 16px !default;
+$c-menu__color: #FFF !default;
+$c-menu__line-height: 30 !default;
+$c-menu__border: 2px solid #2e3233 !default;
+$c-menu__z-index: 2 !default;
 
 // ============================================================
 // CSS Output
 
 
 .c-menu__container{
-  margin:auto;
-  width:400px;
-  font-size:16px;
-  line-height:30px;
-  border:2px solid #2e3233;
-  color: white;
+  margin:$c-menu__margin;
+  font-size:$c-menu__font-size;
+  line-height:$c-menu__line-height;
+  border:$c-menu__border;
+  color: $c-menu__color;
   position:relative;
-  z-index:2;
+  z-index:$c-menu__z-index;
   &:before{
     background-color:#e7e2e6;
     content:"";

@@ -9,13 +9,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
+@font-face {
+  font-family:'Reactor7';
+  src:url('../../fonts/Reactor7.woff') format('woff');
+}
+
+
 
 // ============================================================ 
 
 
-$s-fonts__font-family:            'Roboto', sans-serif !default;
+$s-fonts__font-family:            Reactor7, 'Roboto', sans-serif !default;
 
-$s-fonts__font-family--title:     'Roboto', sans-serif !default;
+$s-fonts__font-family--title:     Reactor7, 'Roboto', sans-serif !default;
 
 
 $s-fonts__font-size:              17px !default;
