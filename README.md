@@ -18,8 +18,8 @@ Clone the repository in local and install the dependencies, then run dev & build
 **Install:**
 
 ```bash
-git clone https://github.com/klaufel/polygoncss.git
-cd polygoncss
+git clone
+cd mako
 npm install
 ```
 
